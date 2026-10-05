@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Redes Sociales | Instituto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #061a36, #0b3b70);
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 25px;
+        }
+
+        .contenedor {
+            width: 100%;
+            max-width: 430px;
+            text-align: center;
+        }
+
+        /* Logo / encabezado */
+        .encabezado {
+            margin-bottom: 35px;
+        }
+
+        .icono {
+            width: 90px;
+            height: 90px;
+
+            margin: 0 auto 20px;
+
+            border-radius: 50%;
+
+            background: #f58220;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 42px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .linea {
+            width: 70px;
+            height: 4px;
+
+            background: #f58220;
+
+            margin: 15px auto 18px;
+
+            border-radius: 10px;
+        }
+
+        .descripcion {
+            color: #dce9f7;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Botones */
+        .redes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .boton {
+            display: flex;
+            align-items: center;
+
+            text-decoration: none;
+            color: white;
+
+            background: rgba(255, 255, 255, 0.1);
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+            padding: 17px 20px;
+
+            border-radius: 15px;
+
+            font-size: 17px;
+            font-weight: bold;
+
+            transition: 0.25s ease;
+
+            backdrop-filter: blur(8px);
+        }
+
+        .boton:hover {
+            transform: translateY(-4px);
+
+            background: #f58220;
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .boton:active {
+            transform: scale(0.97);
+        }
+
+        .logo-red {
+            width: 42px;
+            height: 42px;
+
+            border-radius: 10px;
+
+            background: white;
+            color: #0b3b70;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-right: 15px;
+
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .texto-boton {
+            flex: 1;
+            text-align: left;
+        }
+
+        .flecha {
+            font-size: 22px;
+            opacity: 0.8;
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: 35px;
+
+            color: #a9c1da;
+
+            font-size: 13px;
+        }
+
+        /* Adaptación para celulares pequeños */
+        @media (max-width: 400px) {
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .icono {
+                width: 75px;
+                height: 75px;
+                font-size: 35px;
+            }
+
+            .boton {
+                padding: 15px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <!-- ENCABEZADO -->
+        <section class="encabezado">
+
+            <div class="icono">
+                📱
+            </div>
+
+            <h1>Redes Sociales</h1>
+
+            <div class="linea"></div>
+
+            <p class="descripcion">
+                Conoce más sobre nuestro establecimiento,
+                nuestras actividades y todo lo que tenemos
+                para ofrecerte.
+            </p>
+
+        </section>
+
+
+        <!-- BOTONES -->
+        <section class="redes">
+
+            <!-- TIKTOK -->
+            <a href="https://www.tiktok.com/@itdbc2"
+               class="boton"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <div class="logo-red">
+                    ♪
+                </div>
+
+                <div class="texto-boton">
+                    TikTok
+                </div>
+
+                <div class="flecha">
+                    →
+                </div>
+
+            </a>
+
+
+            <!-- FACEBOOK -->
+            <a href="https://www.facebook.com/itdbc/?locale=es_LA"
+               class="boton"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <div class="logo-red">
+                    f
+                </div>
+
+                <div class="texto-boton">
+                    Facebook
+                </div>
+
+                <div class="flecha">
+                    →
+                </div>
+
+            </a>
+
+
+            <!-- BLOG -->
+            <a href="https://itdbc.blogspot.com/"
+               class="boton"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <div class="logo-red">
+                    🌐
+                </div>
+
+                <div class="texto-boton">
+                    Blog del Instituto
+                </div>
+
+                <div class="flecha">
+                    →
+                </div>
+
+            </a>
+
+        </section>
+
+
+        <!-- PIE -->
+        <footer>
+            © 2026 · Instituto Técnico Diversificado de Bachillerato en Construcción
+        </footer>
+
+    </main>
+
+</body>
+</html>
